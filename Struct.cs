@@ -34,6 +34,7 @@ namespace GMLStruct
                 }
             }
 
+            // 位置タグ
             if (xml.LocalName == "posList")
             {
                 if (xml.NodeType == XmlNodeType.EndElement)
@@ -84,7 +85,7 @@ namespace GMLStruct
             {
                 if (xml.NodeType == XmlNodeType.EndElement)
                 {
-                    strLine = xml.ReadInnerXml().Split('n');
+                    strLine = xml.ReadInnerXml().Split('\n');
                     foreach (var str in strLine)
                     {
                         strPoint = str.Split(' ');
