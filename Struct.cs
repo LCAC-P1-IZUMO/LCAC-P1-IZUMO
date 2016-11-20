@@ -59,6 +59,7 @@ namespace GMLStruct
             string[] strLine;
             string[] strPoint;
 
+            // 面タグ
             if (xml.LocalName == "Surface")
             {
                 if (xml.NodeType == XmlNodeType.Element)
@@ -68,6 +69,7 @@ namespace GMLStruct
                 }
             }
 
+            // 曲線タグ
             if (xml.LocalName == "Curve")
             {
                 if (xml.NodeType == XmlNodeType.Element)
@@ -77,6 +79,7 @@ namespace GMLStruct
                 }
             }
 
+            // 位置タグ
             if (xml.LocalName == "posList")
             {
                 if (xml.NodeType == XmlNodeType.EndElement)
