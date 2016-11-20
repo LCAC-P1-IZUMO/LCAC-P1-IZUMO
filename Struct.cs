@@ -123,6 +123,7 @@ namespace GMLStruct
                     }
                 }
 
+                // 面情報の読み取り
                 SSurface.Read(xml, Value);
             }
         }
