@@ -1,0 +1,222 @@
+package first.android.lcac_p1_izumo;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+
+
+
+public class MainActivity extends Activity {
+
+	//==================================================================
+	//*** イベントリスナー ***//
+	//==================================================================
+	/** 「シナリオ作成画面へ」ボタン<br>
+	 *説明：「シナリオ作成画面へ」ボタン押下<br>
+	 */
+	private View.OnClickListener btnScreenTransition_click = new View.OnClickListener() {
+		public void onClick(View v) {
+			// TODO 自動生成されたメソッド・スタブ
+			Log.v("btnScreenTransition","onClick");
+		}
+	};
+
+	/** 「操作をひとつ戻す」ボタン<br>
+	 *説明：「操作をひとつ戻す」ボタン押下<br>
+	 */
+	private View.OnClickListener btnRestore_click = new View.OnClickListener() {
+		public void onClick(View v) {
+			// TODO 自動生成されたメソッド・スタブ
+			Log.v("btnRestore","onClick");
+		}
+	};
+
+	/** 「シナリオ追加」ボタン<br>
+	 *説明：「シナリオ追加」ボタン押下<br>
+	 */
+	private View.OnClickListener btnScenarioAdd_click = new View.OnClickListener() {
+		public void onClick(View v) {
+			// TODO 自動生成されたメソッド・スタブ
+			Log.v("btnScenarioAdd","onClick");
+		}
+	};
+
+	/** 「指令追加」ボタン<br>
+	 *説明：「指令追加」ボタン押下<br>
+	 */
+	private View.OnClickListener btnCommandAdd_click = new View.OnClickListener() {
+		public void onClick(View v) {
+			// TODO 自動生成されたメソッド・スタブ
+			Log.v("btnCommandAdd","onClick");
+		}
+	};
+
+	/** 「シナリオ削除」ボタン<br>
+	 *説明：「シナリオ削除」ボタン押下<br>
+	 */
+	private View.OnClickListener btnScenarioDel_click = new View.OnClickListener() {
+		public void onClick(View v) {
+			// TODO 自動生成されたメソッド・スタブ
+			Log.v("btnScenarioDel","onClick");
+		}
+	};
+
+	/** 「指令削除」ボタン<br>
+	 *説明：「指令削除」ボタン押下<br>
+	 */
+	private View.OnClickListener btnCommandDel_click = new View.OnClickListener() {
+		public void onClick(View v) {
+			// TODO 自動生成されたメソッド・スタブ
+			Log.v("btnCommandDel","onClick");
+		}
+	};
+
+	//==================================================================
+	//*** onCreate ***//
+	//==================================================================
+    @Override
+
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        ((Button)findViewById(R.id.btnScreenTransition)).setOnClickListener(btnScreenTransition_click);{
+        	System.out.println("シナリオ作成画面へボタン押下");
+        }
+        ((Button)findViewById(R.id.btnRestore)).setOnClickListener(btnRestore_click);{
+    		System.out.println("操作をひとつ戻すボタン押下");
+        }
+        ((Button)findViewById(R.id.btnScenarioAdd)).setOnClickListener(btnScenarioAdd_click);{
+    		System.out.println("シナリオ追加ボタン押下");
+        }
+        ((Button)findViewById(R.id.btnCommandAdd)).setOnClickListener(btnCommandAdd_click);{
+    		System.out.println("指令追加ボタン押下");
+        }
+        ((Button)findViewById(R.id.btnScenarioDel)).setOnClickListener(btnScenarioDel_click);{
+    		System.out.println("シナリオ削除ボタン押下");
+        }
+        ((Button)findViewById(R.id.btnCommandDel)).setOnClickListener(btnCommandDel_click);{
+    		System.out.println("指令削除ボタン押下");
+        }
+
+    }
+//        findViewById(R.id.btnScreenTransition).setOnClickListener(btnScreenTransition_click);
+//        findViewById(R.id.btnRestore).setOnClickListener(btnRestore_click);
+//        findViewById(R.id.btnScenarioAdd).setOnClickListener(btnScenarioAdd_click);
+//        findViewById(R.id.btnCommandAdd).setOnClickListener(btnCommandAdd_click);
+//        findViewById(R.id.btnScenarioDel).setOnClickListener(btnScenarioDel_click);
+//        findViewById(R.id.btnCommandDel).setOnClickListener(btnCommandDel_click);
+//    }
+
+/*    public void onClick(View v) {
+        if (v != null) {
+            switch (v.getId()) {
+                case R.id.btnScreenTransition:
+                	System.out.println("シナリオ作成画面へボタン押下");
+                    break;
+
+                case R.id.btnRestore:
+                	System.out.println("操作をひとつ戻すボタン押下");
+                    break;
+
+                case R.id.btnScenarioAdd:
+                	System.out.println("シナリオ追加ボタン押下");
+                    break;
+
+                case R.id.btnCommandAdd:
+                	System.out.println("指令追加ボタン押下");
+                    break;
+
+                case R.id.btnScenarioDel:
+                	System.out.println("シナリオ削除ボタン押下");
+                    break;
+
+                case R.id.btnCommandDel:
+                	System.out.println("指令削除ボタン押下");
+                    break;
+
+                default:
+                	System.out.println("ボタンが変だよ");
+                    break;
+            }
+        }
+    }*/
+
+/*
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        Button btn = (Button)findViewById(R.id.btnScreenTransition;
+        btn.setOnClickListener(btnScreenTransition);
+
+
+        ((Button)findViewById(R.id.btnScreenTransition)).setOnClickListener(btnScreenTransition_click);
+    }************************************
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity_main);
+
+		ListView ScenarioListView = (ListView) findViewById(R.id.ScenarioListView);
+
+		// データを準備
+		ArrayList<String> items1 = new ArrayList<String>();
+		for(int i = 0; i < 20; i++) {
+			items1.add("シナリオ-" + i);
+		}
+
+		// Adapter - ArrayAdapter
+		ArrayAdapter<String> adapter1 = new ArrayAdapter<String>(
+				this,
+				R.layout.scenario_list,
+				items1
+				);
+
+		// ScenarioListViewに表示
+		ScenarioListView.setAdapter(adapter1);
+
+
+		ListView CommandListView = (ListView) findViewById(R.id.CommandListView);
+
+		// データを準備
+		ArrayList<String> items2 = new ArrayList<String>();
+		for(int i = 0; i < 20; i++) {
+			items2.add("指令-" + i);
+		}
+
+		// Adapter - ArrayAdapter
+		ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(
+				this,
+				R.layout.command_list,
+				items2
+				);
+
+		// CommandListViewに表示
+		CommandListView.setAdapter(adapter2);
+	}*/
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu; this adds items to the action bar if it is present.
+		getMenuInflater().inflate(R.menu.main, menu);
+		return true;
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// Handle action bar item clicks here. The action bar will
+		// automatically handle clicks on the Home/Up button, so long
+		// as you specify a parent activity in AndroidManifest.xml.
+		int id = item.getItemId();
+		if (id == R.id.action_settings) {
+			return true;
+		}
+		return super.onOptionsItemSelected(item);
+	}
+}
