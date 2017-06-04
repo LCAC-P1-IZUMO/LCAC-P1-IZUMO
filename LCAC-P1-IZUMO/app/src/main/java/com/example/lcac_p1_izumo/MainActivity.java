@@ -1,7 +1,7 @@
 package com.example.lcac_p1_izumo;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+        import android.support.v7.app.AppCompatActivity;
+        import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
 
