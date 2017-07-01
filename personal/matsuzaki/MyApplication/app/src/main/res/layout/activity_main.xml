@@ -15,28 +15,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="LCAC-P1-IZUMO"
+        android:textAllCaps="false"
         android:textSize="16pt"
         android:layout_marginTop="19dp"
         android:id="@+id/textView2"
-        android:layout_below="@+id/textView1"
         android:layout_centerHorizontal="true" />
 
     <Button
-        android:text="開始する"
+        android:id="@+id/btnSubForm01"
+        android:text="SubForm01へ遷移"
+        android:textAllCaps="false"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="57dp"
-        android:id="@+id/btnStart" />
-
-    <TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="■表紙■"
-    android:textSize="24pt"
-        android:layout_marginTop="22dp"
-    android:id="@+id/textView1"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_marginTop="57dp" />
 </RelativeLayout>
