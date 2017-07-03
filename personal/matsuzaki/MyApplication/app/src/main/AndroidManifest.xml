@@ -16,7 +16,7 @@
         </activity>
 
         <activity android:name=".SubForm01" />
-        <activity android:name=".SubForm02" />
+
     </application>
 
 </manifest>
