@@ -18,4 +18,32 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true" />
 
+    <Button
+        android:text="Kondo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="19dp"
+        android:id="@+id/btn_kondo" />
+
+    <Button
+        android:text="Kanazawa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btn_kikuchi"
+        android:layout_toEndOf="@+id/btn_kikuchi"
+        android:layout_marginStart="18dp"
+        android:id="@+id/btn_kanazawa" />
+
+    <Button
+        android:text="Kikuchi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:id="@+id/btn_kikuchi"
+        android:layout_alignBaseline="@+id/btn_kondo"
+        android:layout_alignBottom="@+id/btn_kondo"
+        android:layout_toEndOf="@+id/btn_kondo" />
+
 </RelativeLayout>
