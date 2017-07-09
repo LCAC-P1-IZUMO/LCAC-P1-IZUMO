@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             // [SubForm01]を開く
-            Intent intent = new Intent(getApplication(), print_instructions.class);
+            Intent intent = new Intent(getApplication(), PrintInstructions.class);
             startActivity(intent);
         }
     };

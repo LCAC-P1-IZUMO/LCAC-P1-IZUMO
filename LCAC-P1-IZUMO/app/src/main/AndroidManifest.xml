@@ -15,8 +15,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".groupcreationscreen"></activity>
-        <activity android:name=".print_instructions"></activity>
+        <activity android:name=".PrintInstructions"></activity>
         <activity android:name=".ScenarioListActivity"></activity>
     </application>
 
