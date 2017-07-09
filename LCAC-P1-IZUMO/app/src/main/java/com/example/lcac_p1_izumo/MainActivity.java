@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
     private Button.OnClickListener mOnClick_btn_kondo = new Button.OnClickListener() {
         @Override
         public void onClick(View v) {
-            // [SubForm01]を開く
+            // [PrintInstructions]を開く
             Intent intent = new Intent(getApplication(), PrintInstructions.class);
             startActivity(intent);
         }
@@ -49,21 +49,21 @@ public class MainActivity extends AppCompatActivity {
     /**
      * [Kikuchi]ボタンを押下した時の処理を定義
      */
-    private Button.OnClickListener mOnClick_btn_kikuchi = new Button.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            // [SubForm02]を開く
-            Intent intent = new Intent(getApplication(), groupcreationscreen.class);
-            startActivity(intent);
-        }
-    };
+//    private Button.OnClickListener mOnClick_btn_kikuchi = new Button.OnClickListener() {
+//        @Override
+//        public void onClick(View v) {
+//            // [Kikuchi]を開く
+//            Intent intent = new Intent(getApplication(), groupcreationscreen.class);
+//            startActivity(intent);
+//        }
+//    };
     /**
      * [Kanazawa]ボタンを押下した時の処理を定義
      */
     private Button.OnClickListener mOnClick_btn_kanazawa = new Button.OnClickListener() {
         @Override
         public void onClick(View v) {
-            // [SubForm02]を開く
+            // [Kanazawa]を開く
             Intent intent = new Intent(getApplication(), ScenarioListActivity.class);
             startActivity(intent);
         }
@@ -77,22 +77,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // [SubForm01へ遷移]ボタンのインスタンスを取得
+        // [kondoへ遷移]ボタンのインスタンスを取得
         mBtn_kondo = (Button)findViewById(R.id.btn_kondo);
 
-        // [SubForm01へ遷移]ボタンを押下した時の処理を設定
+        // [kondoへ遷移]ボタンを押下した時の処理を設定
         mBtn_kondo.setOnClickListener(mOnClick_btn_kondo);
 
-        // [SubForm02へ遷移]ボタンのインスタンスを取得
+        // [Kikuchiへ遷移]ボタンのインスタンスを取得
         mBtn_kikuchi = (Button)findViewById(R.id.btn_kikuchi);
 
-        // [SubForm02へ遷移]ボタンを押下した時の処理を設定
-        mBtn_kikuchi.setOnClickListener(mOnClick_btn_kikuchi);
+//        // [Kikuchiへ遷移]ボタンを押下した時の処理を設定
+//        mBtn_kikuchi.setOnClickListener(mOnClick_btn_kikuchi);
 
-        // [SubForm01へ遷移]ボタンのインスタンスを取得
+        // [kanazawaへ遷移]ボタンのインスタンスを取得
         mBtn_kanazawa = (Button)findViewById(R.id.btn_kanazawa);
 
-        // [SubForm01へ遷移]ボタンを押下した時の処理を設定
+        // [kanazawaへ遷移]ボタンを押下した時の処理を設定
         mBtn_kanazawa.setOnClickListener(mOnClick_btn_kanazawa);
 
     }
