@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\owner\Desktop\Git\LCAC-P1-IZUMO\personal\MyApplication\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="78884c9977921d2a032ad1aec7d1d6890a1bbe78">
+        <dex dex="C:\Users\owner\Desktop\Git\LCAC-P1-IZUMO\personal\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_87f6d8895bb91f9e96681cde9c2e87dc46166e63\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\owner\Desktop\Git\LCAC-P1-IZUMO\personal\MyApplication\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Users\owner\Desktop\Git\LCAC-P1-IZUMO\personal\MyApplication\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_942240096c13bd375725e12299c6b26f1a513f60\classes.dex" />
+    </item>
+
+</items>

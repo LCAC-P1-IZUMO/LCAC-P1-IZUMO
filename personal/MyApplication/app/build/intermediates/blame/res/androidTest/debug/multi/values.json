@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "C:\\Users\\owner\\Desktop\\Git\\LCAC-P1-IZUMO\\personal\\MyApplication\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 45,
+                    "endOffset": 96
+                },
+                "from": {
+                    "file": "C:\\Users\\owner\\.android\\build-cache\\161529b3ae3f91e8eb1b2d6bac76a2d3147258fe\\output\\res\\values\\values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 229,
+                        "endColumn": 45,
+                        "endOffset": 270
+                    }
+                }
+            }
+        ]
+    }
+]
