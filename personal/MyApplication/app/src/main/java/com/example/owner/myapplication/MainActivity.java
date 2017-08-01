@@ -26,6 +26,10 @@ public class MainActivity extends AppCompatActivity {
      * [SubForm02へ遷移]ボタン
      */
     private Button m_btnSubForm02;
+    /**
+     * [SubForm03へ遷移]ボタン
+     */
+    private Button m_btnSubForm03;
 
     //**********************************************************
     //******************  イベントリスナー  ********************
@@ -52,6 +56,17 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         }
     };
+    /**
+     * [SubForm03へ遷移]ボタンを押下した時の処理を定義
+     */
+    private Button.OnClickListener onClick_btnSubForm03 = new Button.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            // [SubForm03]を開く
+            Intent intent = new Intent(getApplication(), SubForm03.class);
+            startActivity(intent);
+        }
+    };
 
     //**********************************************************
     //******************      メソッド      ********************
@@ -72,12 +87,18 @@ public class MainActivity extends AppCompatActivity {
         // [SubForm02へ遷移]ボタン
         m_btnSubForm02 = (Button)findViewById(R.id.btnSubForm02);
 
+        // [SubForm03へ遷移]ボタン
+        m_btnSubForm03 = (Button)findViewById(R.id.btnSubForm03);
+
         //**** コントロールにイベントリスナーを設定 ****//
         // [SubForm01へ遷移]ボタン
         m_btnSubForm01.setOnClickListener(onClick_btnSubForm01);
 
         // [SubForm02へ遷移]ボタン
         m_btnSubForm02.setOnClickListener(onClick_btnSubForm02);
+
+        // [SubForm03へ遷移]ボタン
+        m_btnSubForm03.setOnClickListener(onClick_btnSubForm03);
 
         //**** 初期処理 ****//
     }
