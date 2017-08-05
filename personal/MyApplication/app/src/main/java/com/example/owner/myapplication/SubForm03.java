@@ -1,7 +1,6 @@
 package com.example.owner.myapplication;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
@@ -9,6 +8,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.GridView;
 import android.widget.Toast;
+
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteCursor;
+import android.widget.SimpleCursorAdapter;
+import android.widget.ArrayAdapter;
+import DataBase.DataBase;
+import DataBase.Table01;
 
 public class SubForm03 extends Activity {
     //**********************************************************
@@ -60,6 +66,42 @@ public class SubForm03 extends Activity {
             m_txtCharacter.setText("");
         }
     };
+    /**
+     * [検索]ボタンを押下した時の処理を定義
+     */
+    private Button.OnClickListener onClick_btnSearch = new Button.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            // データベースヘルパーのインスタンスを作成する
+            DataBase dbHelper = new DataBase(SubForm03.this);
+            // SQLiteのインスタンスを取得する
+            SQLiteDatabase db = dbHelper.getWritableDatabase();
+
+            // 検索
+            SQLiteCursor cursor = Table01.sqlSelectAllColumns(db, true,
+                    m_txtNumber.getText().toString(),
+                    m_txtCharacter.getText().toString()
+            );
+
+            // 結果を表示
+            //m_grdResults.setAdapter(new SimpleCursorAdapter(
+            //        this,
+            //        R.layout.sub_form03,
+            //        cursor,
+            //        new String[] { "数値", "文字" },
+            //        new int[] { R.id.name, R.id.position, R.id.number }
+            //));
+
+            Toast.makeText(
+                SubForm03.this,
+                String.valueOf(cursor.getCount()) + "件取得",
+                Toast.LENGTH_SHORT
+            ).show();
+
+            // データベースを閉じる  
+            db.close();
+        }
+    };
 
     //**********************************************************
     //******************      メソッド      ********************
@@ -95,6 +137,9 @@ public class SubForm03 extends Activity {
         //**** コントロールにイベントリスナーを設定 ****//
         // [クリア]ボタン
         m_btnClear.setOnClickListener(onClick_btnClear);
+
+        // [検索]ボタン
+        m_btnSearch.setOnClickListener(onClick_btnSearch);
 
         //**** 初期処理 ****//
     }
