@@ -18,9 +18,11 @@ public class Command {
         try {
             db.execSQL("DROP TABLE IF EXISTS Command");
             db.execSQL("CREATE TABLE Command ("
-                    + " ScenarioId      INTEGER primary key autoincrement"
-                    + ",GroupeId        INTEGER "
-                    + ",ScenarioName    TEXT"
+                    + " ScenarioId      INTEGER primary key"
+                    + ",CommandId       INTEGER primary key autoincrement"
+                    + ",Commandtext     TEXT"
+                    + ",StartTime       TEXT"
+                    + ",EndTime         TEXT"
                     + ");"
             );
         }
