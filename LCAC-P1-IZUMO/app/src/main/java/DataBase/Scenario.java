@@ -28,5 +28,4 @@ public class Scenario {
             Log.e("SQLiteException", ex.getMessage());
         }
     }
-
 }

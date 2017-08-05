@@ -51,14 +51,14 @@ public class MainActivity extends AppCompatActivity {
     /**
      * [Kikuchi]ボタンを押下した時の処理を定義
      */
-//    private Button.OnClickListener mOnClick_btn_kikuchi = new Button.OnClickListener() {
-//        @Override
-//        public void onClick(View v) {
-//            // [Kikuchi]を開く
-//            Intent intent = new Intent(getApplication(), groupcreationscreen.class);
-//            startActivity(intent);
-//        }
-//    };
+    private Button.OnClickListener mOnClick_btn_kikuchi = new Button.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            // [Kikuchi]を開く
+            Intent intent = new Intent(getApplication(), GroupCreationScreen.class);
+            startActivity(intent);
+        }
+    };
     /**
      * [Kanazawa]ボタンを押下した時の処理を定義
      */
@@ -88,8 +88,8 @@ public class MainActivity extends AppCompatActivity {
         // [Kikuchiへ遷移]ボタンのインスタンスを取得
         mBtn_kikuchi = (Button) findViewById(R.id.btn_kikuchi);
 
-//        // [Kikuchiへ遷移]ボタンを押下した時の処理を設定
-//        mBtn_kikuchi.setOnClickListener(mOnClick_btn_kikuchi);
+        // [Kikuchiへ遷移]ボタンを押下した時の処理を設定
+        mBtn_kikuchi.setOnClickListener(mOnClick_btn_kikuchi);
 
         // [kanazawaへ遷移]ボタンのインスタンスを取得
         mBtn_kanazawa = (Button) findViewById(R.id.btn_kanazawa);
