@@ -11,7 +11,7 @@ public class TestDB extends SQLiteOpenHelper {
     /**
      * データベースフェイル名
      */
-    public static final String DB_NAME = "DataBase01.db";
+    public static final String DB_NAME = "TestDB.db";
     /**
      * データベースバージョン
      */
@@ -21,7 +21,7 @@ public class TestDB extends SQLiteOpenHelper {
      * コンストラクタ
      * @param context
      */
-    public DataBase(Context context) {
+    public TestDB(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
     }
 
@@ -30,8 +30,9 @@ public class TestDB extends SQLiteOpenHelper {
      * @param db
      */
     public void onCreate(SQLiteDatabase db) {
-        //**** [Table01]の作成 ****//
-        Table01.sqlCreate(db);
+        //**** テーブルの作成 ****//
+        Command.sqlCreate(db);
+        Scenario.sqlCreate(db);
     }
 
     /**
@@ -42,7 +43,8 @@ public class TestDB extends SQLiteOpenHelper {
      */
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         // テーブル追加・変更時に記述する
-        //**** [Table01]の作成 ****//
-        Table01.sqlCreate(db);
+        Command.sqlCreate(db);
+        Scenario.sqlCreate(db);
     }
+
 }

@@ -17,6 +17,7 @@
         </activity>
         <activity android:name=".PrintInstructions"></activity>
         <activity android:name=".ScenarioListActivity"></activity>
+        <activity android:name=".GroupCreationScreen"></activity>
     </application>
 
 </manifest>
