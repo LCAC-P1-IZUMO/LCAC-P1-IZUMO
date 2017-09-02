@@ -5,10 +5,10 @@ import android.database.sqlite.SQLiteException;
 import android.util.Log;
 
 /**
- * Created by user on 2017/08/27.
+ * Created by take_ on 2017/09/02.
  */
 
-public class Group {
+public class Member {
 
     /**
      * テーブルを作成する
@@ -16,11 +16,10 @@ public class Group {
      */
     public static void sqlCreate(SQLiteDatabase db) {
         try {
-            db.execSQL("DROP TABLE IF EXISTS Group");
-            db.execSQL("CREATE TABLE Group ("
+            db.execSQL("DROP TABLE IF EXISTS Member");
+            db.execSQL("CREATE TABLE Memer ("
                     + " GroupId         INTEGER primary key"
-                    + ",GroupName       TEXT"
-                    + ",ReaderId        INTEGER"
+                    + ",PersonId        INTEGER"
                     + ");"
             );
         }
@@ -28,5 +27,8 @@ public class Group {
             Log.e("SQLiteException", ex.getMessage());
         }
     }
+
+
+
 
 }
