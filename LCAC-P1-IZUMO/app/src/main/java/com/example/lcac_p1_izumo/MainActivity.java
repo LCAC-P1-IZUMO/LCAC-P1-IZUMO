@@ -33,6 +33,10 @@ public class MainActivity extends AppCompatActivity {
      * [Kanazawa]ボタン
      */
     private Button mBtn_kanazawa;
+    /**
+     * [Kondo2]ボタン
+     */
+    private Button mBtn_kondo2;
 
     //**************************//
     //**** イベントリスナー ****//
@@ -70,6 +74,17 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         }
     };
+    /**
+     * [Kondo2]ボタンを押下した時の処理を定義
+     */
+    private Button.OnClickListener mOnClick_btn_kondo2 = new Button.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            // [a01]を開く
+            Intent intent = new Intent(getApplication(), a01.class);
+            startActivity(intent);
+        }
+    };
 
     //**************************//
     //******** onCreate ********//
@@ -81,21 +96,19 @@ public class MainActivity extends AppCompatActivity {
 
         // [kondoへ遷移]ボタンのインスタンスを取得
         mBtn_kondo = (Button) findViewById(R.id.btn_kondo);
-
-        // [kondoへ遷移]ボタンを押下した時の処理を設定
         mBtn_kondo.setOnClickListener(mOnClick_btn_kondo);
 
         // [Kikuchiへ遷移]ボタンのインスタンスを取得
         mBtn_kikuchi = (Button) findViewById(R.id.btn_kikuchi);
-
-        // [Kikuchiへ遷移]ボタンを押下した時の処理を設定
         mBtn_kikuchi.setOnClickListener(mOnClick_btn_kikuchi);
 
         // [kanazawaへ遷移]ボタンのインスタンスを取得
         mBtn_kanazawa = (Button) findViewById(R.id.btn_kanazawa);
-
-        // [kanazawaへ遷移]ボタンを押下した時の処理を設定
         mBtn_kanazawa.setOnClickListener(mOnClick_btn_kanazawa);
+
+        // [kondoへ遷移]ボタンのインスタンスを取得
+        mBtn_kondo2 = (Button) findViewById(R.id.btn_kondo2);
+        mBtn_kondo2.setOnClickListener(mOnClick_btn_kondo2);
 
     }
     //**********************************************************

@@ -83,10 +83,4 @@ public class PrintInstructions extends Activity {
         m_btnEventEdit.setOnClickListener(onClick_btnEventEdit);
     }
 
-
-
-
-
-
-
 }

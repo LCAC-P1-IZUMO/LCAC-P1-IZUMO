@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/lavel_TITLE"
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:layout_x="19dp"
+        android:layout_y="19dp"
+        android:text="■企画タイトル"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editText_TITLE"
+        android:layout_width="294dp"
+        android:layout_height="wrap_content"
+        android:layout_x="19dp"
+        android:layout_y="44dp"
+        android:ems="10"
+        android:hint="企画名を入力してください"
+        android:maxLength="15"
+        android:singleLine="true" />
+
+    <CalendarView
+        android:id="@+id/calendarView1"
+        android:layout_width="300dp"
+        android:layout_height="231dp"
+        android:layout_x="10dp"
+        android:layout_y="100dp" />
+
+    <TextView
+        android:id="@+id/label_TIME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="272dp"
+        android:layout_y="348dp"
+        android:text="より"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <EditText
+        android:id="@+id/editText_HOUR"
+        android:layout_width="46dp"
+        android:layout_height="wrap_content"
+        android:layout_x="220dp"
+        android:layout_y="330dp"
+        android:ems="10"
+        android:hint="00"
+        android:inputType="time"
+        android:maxLength="2" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/EditText_MINIT"
+        android:layout_width="46dp"
+        android:layout_height="wrap_content"
+        android:layout_x="167dp"
+        android:layout_y="330dp"
+        android:ems="10"
+        android:hint="00"
+        android:inputType="time"
+        android:maxLength="2" />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="215dp"
+        android:layout_y="344dp"
+        android:text=":"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/Button_BACK"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_x="10dp"
+        android:layout_y="407dp"
+        android:text="戻る" />
+
+    <Button
+        android:id="@+id/Button_NEXT"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_x="203dp"
+        android:layout_y="407dp"
+        android:text="次へ" />
+
+    <Button
+        android:id="@+id/Button_SAVE"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:layout_x="124dp"
+        android:layout_y="407dp"
+        android:onClick="onClick_btn_save"
+        android:text="保存" />
+
+</AbsoluteLayout>

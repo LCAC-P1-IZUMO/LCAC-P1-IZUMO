@@ -46,4 +46,13 @@
         android:layout_alignBottom="@+id/btn_kondo"
         android:layout_toEndOf="@+id/btn_kondo" />
 
+    <Button
+        android:id="@+id/btn_kondo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_kondo"
+        android:layout_marginTop="31dp"
+        android:layout_toStartOf="@+id/btn_kikuchi"
+        android:text="KONDO2" />
+
 </RelativeLayout>

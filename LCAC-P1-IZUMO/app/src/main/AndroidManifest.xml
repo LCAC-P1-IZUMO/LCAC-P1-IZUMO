@@ -18,6 +18,11 @@
         <activity android:name=".PrintInstructions"></activity>
         <activity android:name=".ScenarioListActivity"></activity>
         <activity android:name=".GroupCreationScreen"></activity>
+        <activity android:name=".a01"></activity>
+        <activity android:name=".a02"></activity>
+        <activity android:name=".a03"></activity>
+        <activity android:name=".a04"></activity>
+        <activity android:name=".a05"></activity>
     </application>
 
 </manifest>

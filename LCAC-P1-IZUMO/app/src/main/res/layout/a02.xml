@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/button_BACK"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_x="10dp"
+        android:layout_y="407dp"
+        android:text="戻る" />
+
+    <Button
+        android:id="@+id/Button_NEXT"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_x="203dp"
+        android:layout_y="407dp"
+        android:text="次へ" />
+
+    <Button
+        android:id="@+id/Button_SAVE"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:layout_x="124dp"
+        android:layout_y="407dp"
+        android:text="保存" />
+
+    <Button
+        android:id="@+id/button_PLACE"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_x="148dp"
+        android:layout_y="6dp"
+        android:scrollHorizontally="false"
+        android:text="場所呼出"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/lavel_PLACE"
+        android:layout_width="166dp"
+        android:layout_height="wrap_content"
+        android:layout_x="19dp"
+        android:layout_y="19dp"
+        android:text="■場所設定"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/lavel_STORENAME"
+        android:layout_width="43dp"
+        android:layout_height="wrap_content"
+        android:layout_x="20dp"
+        android:layout_y="68dp"
+        android:text="店名:" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="294dp"
+        android:layout_height="wrap_content"
+        android:layout_x="9dp"
+        android:layout_y="94dp"
+        android:ems="10"
+        android:hint="店名を入力してください"
+        android:maxLength="20"
+        android:singleLine="true" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/lavel_URL"
+        android:layout_width="43dp"
+        android:layout_height="wrap_content"
+        android:layout_x="20dp"
+        android:layout_y="138dp"
+        android:text="URL:" />
+
+    <EditText
+        android:id="@+id/text_URL"
+        android:layout_width="282dp"
+        android:layout_height="wrap_content"
+        android:layout_x="18dp"
+        android:layout_y="162dp"
+        android:ems="10"
+        android:inputType="textUri"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/Button_NET"
+        android:layout_width="272dp"
+        android:layout_height="wrap_content"
+        android:layout_x="20dp"
+        android:layout_y="204dp"
+        android:text="検索" />
+
+    <Button
+        android:id="@+id/Button_PLACE2"
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:layout_x="18dp"
+        android:layout_y="274dp"
+        android:scrollHorizontally="false"
+        android:text="開催場所登録"
+        android:textAlignment="center" />
+
+</AbsoluteLayout>

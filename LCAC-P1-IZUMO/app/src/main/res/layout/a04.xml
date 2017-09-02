@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/lavel_TEMP"
+        android:layout_width="248dp"
+        android:layout_height="wrap_content"
+        android:layout_x="19dp"
+        android:layout_y="19dp"
+        android:text="■テンプレート設定"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/Button_BACK"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_x="10dp"
+        android:layout_y="407dp"
+        android:text="戻る" />
+
+    <Button
+        android:id="@+id/Button_NEXT"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_x="203dp"
+        android:layout_y="407dp"
+        android:text="次へ" />
+
+    <Button
+        android:id="@+id/Button_SAVE"
+        android:layout_width="78dp"
+        android:layout_height="wrap_content"
+        android:layout_x="124dp"
+        android:layout_y="407dp"
+        android:text="保存" />
+</AbsoluteLayout>
