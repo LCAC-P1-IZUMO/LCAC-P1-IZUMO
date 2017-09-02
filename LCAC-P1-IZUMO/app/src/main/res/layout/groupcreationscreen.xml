@@ -1,6 +1,142 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:layout_weight="1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Group01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="グループ01" />
+
+        <Button
+            android:id="@+id/GoupDelete01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="削除" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Group02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="グループ02" />
+
+        <Button
+            android:id="@+id/GoupDelete02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="削除" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Group03"
+            android:layout_width="184dp"
+            android:layout_height="wrap_content"
+            android:text="グループ03" />
+
+        <Button
+            android:id="@+id/GroupDelete03"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:text="削除" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Group04"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="グループ04" />
+
+        <Button
+            android:id="@+id/GroupDelete04"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="削除" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Group05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="グループ05" />
+
+        <Button
+            android:id="@+id/GroupDelete05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="削除" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="121dp"
+        android:orientation="horizontal"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="87dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="0.67"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="188dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="指令作成画面へボタン" />
+        </LinearLayout>
+
+    </LinearLayout>
 
 </LinearLayout>

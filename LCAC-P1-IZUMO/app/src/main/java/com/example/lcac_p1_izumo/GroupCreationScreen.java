@@ -1,7 +1,7 @@
 package com.example.lcac_p1_izumo;
 
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 
 /**
  * Created by take_ on 2017/08/05.
