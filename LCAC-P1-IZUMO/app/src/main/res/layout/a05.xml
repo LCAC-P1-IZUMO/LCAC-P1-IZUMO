@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView_CHECK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="■下記の内容でメールを作成しますがよろしいですか？"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="291dp"
+        android:layout_height="304dp"
+        android:layout_x="14dp"
+        android:layout_y="82dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/Button_NEXT"
+        android:layout_width="167dp"
+        android:layout_height="wrap_content"
+        android:layout_x="138dp"
+        android:layout_y="401dp"
+        android:onClick="onClick_btn_mail"
+        android:text="保存してメール作成" />
+
+    <Button
+        android:id="@+id/button_BACK"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_x="10dp"
+        android:layout_y="407dp"
+        android:text="戻る" />
+
+</AbsoluteLayout>

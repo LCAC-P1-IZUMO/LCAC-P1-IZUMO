@@ -8,6 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorLavender"
     tools:context="com.example.lcac_p1_izumo.MainActivity">
 
     <!-- タイトル -->
@@ -77,7 +78,7 @@
         android:layout_width="match_parent"
         android:layout_height="128dp"
         android:id="@+id/scrollView2"
-        android:layout_marginTop="34dp"
+        android:layout_marginTop="24dp"
         android:layout_below="@+id/btnEventEdit"
         android:layout_alignParentStart="true">
 
@@ -96,13 +97,13 @@
         android:layout_alignParentStart="true" />
 
     <Switch
-        android:text="Switch"
+        android:id="@+id/switch1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/switch1"
         android:layout_alignBaseline="@+id/button3"
         android:layout_alignBottom="@+id/button3"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:text="実行　" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -119,11 +120,11 @@
     </ScrollView>
 
     <Button
-        android:text="Button"
+        android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button3"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/spnGroupSelect" />
+        android:layout_alignStart="@+id/spnGroupSelect"
+        android:text="テスト送信" />
 
 </RelativeLayout>
