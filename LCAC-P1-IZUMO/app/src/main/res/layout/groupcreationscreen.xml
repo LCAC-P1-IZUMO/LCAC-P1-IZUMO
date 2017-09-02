@@ -51,13 +51,15 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="59dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:weightSum="1">
 
         <Button
             android:id="@+id/Group03"
             android:layout_width="184dp"
             android:layout_height="wrap_content"
-            android:text="グループ03" />
+            android:text="グループ03"
+            android:layout_weight="0.95" />
 
         <Button
             android:id="@+id/GroupDelete03"
@@ -134,7 +136,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="指令作成画面へボタン" />
+                android:text="指令作成画面へ" />
         </LinearLayout>
 
     </LinearLayout>
