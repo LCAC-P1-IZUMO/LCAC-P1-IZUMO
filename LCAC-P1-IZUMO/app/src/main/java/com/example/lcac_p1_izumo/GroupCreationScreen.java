@@ -26,25 +26,6 @@ public class GroupCreationScreen  extends AppCompatActivity {
      */
     private Button m_btnClear01;
     /**
-     * [検索]ボタン
-     */
-    private Button m_btnSearch;
-    /**
-     * [登録]ボタン
-     */
-    private Button m_btnRegist;
-    /**
-     * [数値項目]テキストボックス
-     */
-    private EditText m_txtNumber;
-    /**
-     * [文字項目]テキストボックス
-     */
-    private EditText m_txtCharacter;
-    /**
-     * [結果一覧]グリッドビュー
-     */
-    private GridView m_grdResults;
 
     //**********************************************************
     //******************  イベントリスナー  ********************
@@ -52,13 +33,6 @@ public class GroupCreationScreen  extends AppCompatActivity {
     /**
      * [クリア]ボタンを押下した時の処理を定義
      */
-    private Button.OnClickListener onClick_btnClear = new Button.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            m_txtNumber.setText("");
-            m_txtCharacter.setText("");
-        }
-    };
 
     //**********************************************************
     //******************      onCreate      ********************
@@ -89,7 +63,6 @@ public class GroupCreationScreen  extends AppCompatActivity {
 
         //**** コントロールにイベントリスナーを設定 ****//
         // [クリア]ボタン
-        m_btnClear01.setOnClickListener(onClick_btnClear);
 
         // [検索]ボタン
         //m_btnSearch.setOnClickListener(onClick_btnSearch);
