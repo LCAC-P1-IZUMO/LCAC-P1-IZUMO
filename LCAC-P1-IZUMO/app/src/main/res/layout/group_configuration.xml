@@ -3,4 +3,264 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/GroupScreenConfiguration"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:text="グループ設定画面"
+            android:textSize="10pt"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/GroupName"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="グループ名"
+            android:textSize="8pt"
+            android:layout_marginStart="16dp"
+            android:layout_alignBaseline="@+id/editText2"
+            android:layout_alignBottom="@+id/editText2"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="17dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="グループ名"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="23dp" />
+
+        <CheckBox
+            android:id="@+id/checkBox7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText6"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:layout_below="@+id/editText2"
+            android:layout_alignEnd="@+id/editText2" />
+
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText2"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@+id/checkBox7"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="リーダー名" />
+
+        <CheckBox
+            android:id="@+id/checkBox8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/checkBox7"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/editText7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:layout_alignTop="@+id/checkBox8"
+            android:layout_alignStart="@+id/editText6"
+            android:layout_alignEnd="@+id/editText6" />
+
+        <EditText
+            android:id="@+id/editText8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editText5"
+            android:layout_alignTop="@+id/editText7"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:layout_alignEnd="@+id/editText5" />
+
+        <CheckBox
+            android:id="@+id/checkBox9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editText7"
+            android:layout_marginTop="17dp" />
+
+        <EditText
+            android:id="@+id/editText9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/checkBox9"
+            android:layout_alignStart="@+id/editText7"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:layout_alignEnd="@+id/editText7" />
+
+        <EditText
+            android:id="@+id/editText10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:layout_alignBaseline="@+id/editText9"
+            android:layout_alignBottom="@+id/editText9"
+            android:layout_alignStart="@+id/editText8"
+            android:layout_alignEnd="@+id/editText8" />
+
+        <CheckBox
+            android:id="@+id/checkBox10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editText10"
+            android:layout_marginTop="22dp" />
+
+        <EditText
+            android:id="@+id/editText11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/checkBox10"
+            android:layout_alignStart="@+id/editText9"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:layout_alignEnd="@+id/editText9" />
+
+        <EditText
+            android:id="@+id/editText12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editText10"
+            android:layout_alignTop="@+id/editText11"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:layout_alignEnd="@+id/editText10" />
+
+        <CheckBox
+            android:id="@+id/checkBox11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/checkBox10"
+            android:layout_marginTop="26dp" />
+
+        <EditText
+            android:id="@+id/editText13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:layout_above="@+id/checkBox12"
+            android:layout_alignStart="@+id/editText11"
+            android:layout_alignEnd="@+id/editText11" />
+
+        <EditText
+            android:id="@+id/editText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editText12"
+            android:layout_alignTop="@+id/editText13"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:layout_alignEnd="@+id/editText12" />
+
+        <CheckBox
+            android:id="@+id/checkBox12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/checkBox11"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/editText15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/checkBox12"
+            android:layout_alignStart="@+id/editText13"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:layout_alignEnd="@+id/editText13" />
+
+        <EditText
+            android:id="@+id/editText16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/editText14"
+            android:layout_alignTop="@+id/editText15"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:layout_alignEnd="@+id/editText14" />
+
+        <CheckBox
+            android:id="@+id/checkBox13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/checkBox12"
+            android:layout_marginTop="24dp" />
+
+        <EditText
+            android:id="@+id/editText17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/checkBox13"
+            android:layout_alignStart="@+id/editText15"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:layout_alignEnd="@+id/editText15" />
+
+        <EditText
+            android:id="@+id/editText19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:layout_alignBottom="@+id/editText17"
+            android:layout_alignStart="@+id/editText16"
+            android:layout_alignTop="@+id/editText17"
+            android:layout_alignEnd="@+id/editText16" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editText17"
+            android:layout_marginTop="14dp"
+            android:layout_toStartOf="@+id/editText2"
+            android:text="取消" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/button"
+            android:layout_alignStart="@+id/editText19"
+            android:text="登録" />
+
+    </RelativeLayout>
+
 </LinearLayout>
