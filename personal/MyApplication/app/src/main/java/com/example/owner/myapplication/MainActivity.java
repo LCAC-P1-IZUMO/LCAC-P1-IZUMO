@@ -30,6 +30,10 @@ public class MainActivity extends AppCompatActivity {
      * [SubForm03へ遷移]ボタン
      */
     private Button m_btnSubForm03;
+    /**
+     * [メール送信画面へ遷移]ボタン
+     */
+    private Button m_btnSubFormSendMail;
 
     //**********************************************************
     //******************  イベントリスナー  ********************
@@ -67,6 +71,17 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         }
     };
+    /**
+     * [メール送信画面へ遷移]ボタンを押下した時の処理を定義
+     */
+    private Button.OnClickListener onClick_btnSubFormSendMail = new Button.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            // [SubFormSendMail]を開く
+            Intent intent = new Intent(getApplication(), SubFormSendMail.class);
+            startActivity(intent);
+        }
+    };
 
     //**********************************************************
     //******************      メソッド      ********************
@@ -90,6 +105,9 @@ public class MainActivity extends AppCompatActivity {
         // [SubForm03へ遷移]ボタン
         m_btnSubForm03 = (Button)findViewById(R.id.btnSubForm03);
 
+        // [メール送信画面へ遷移]ボタン
+        m_btnSubFormSendMail = (Button)findViewById(R.id.btnSubFormSendMail);
+
         //**** コントロールにイベントリスナーを設定 ****//
         // [SubForm01へ遷移]ボタン
         m_btnSubForm01.setOnClickListener(onClick_btnSubForm01);
@@ -99,6 +117,9 @@ public class MainActivity extends AppCompatActivity {
 
         // [SubForm03へ遷移]ボタン
         m_btnSubForm03.setOnClickListener(onClick_btnSubForm03);
+
+        // [メール送信画面へ遷移]ボタン
+        m_btnSubFormSendMail.setOnClickListener(onClick_btnSubFormSendMail);
 
         //**** 初期処理 ****//
     }

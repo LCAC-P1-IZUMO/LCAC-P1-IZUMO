@@ -11,8 +11,8 @@ import android.widget.Toast;
 
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteCursor;
-import android.widget.SimpleCursorAdapter;
 import android.widget.ArrayAdapter;
+import java.util.ArrayList;
 import DataBase.DataBase;
 import DataBase.Table01;
 
@@ -83,20 +83,49 @@ public class SubForm03 extends Activity {
                     m_txtCharacter.getText().toString()
             );
 
-            // 結果を表示
-            //m_grdResults.setAdapter(new SimpleCursorAdapter(
-            //        this,
-            //        R.layout.sub_form03,
-            //        cursor,
-            //        new String[] { "数値", "文字" },
-            //        new int[] { R.id.name, R.id.position, R.id.number }
-            //));
+            // 結果を格納
+            ArrayList<String> list = new ArrayList<String>();
+            //for (int row = 0; row < cursor.getCount(); ++row) {
+            //    list.add(cursor.getString(0) + " " + cursor.getString(1));
+            //    cursor.moveToNext();
+            //}
+
+            //// 結果を表示
+            //ArrayAdapter<String> adapter = new ArrayAdapter<String>(
+            //        getApplicationContext(),
+            //        android.R.layout.simple_list_item_1,
+            //        list
+            //);
+            //m_grdResults.setAdapter(adapter);
 
             Toast.makeText(
-                SubForm03.this,
-                String.valueOf(cursor.getCount()) + "件取得",
-                Toast.LENGTH_SHORT
+                    SubForm03.this,
+                    String.valueOf(cursor.getCount()) + "件取得",
+                    Toast.LENGTH_SHORT
             ).show();
+
+            // データベースを閉じる  
+            db.close();
+        }
+    };
+    /**
+     * [登録]ボタンを押下した時の処理を定義
+     */
+    private Button.OnClickListener onClick_btnRegist = new Button.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            // データベースヘルパーのインスタンスを作成する
+            DataBase dbHelper = new DataBase(SubForm03.this);
+            // SQLiteのインスタンスを取得する
+            SQLiteDatabase db = dbHelper.getWritableDatabase();
+
+            // データの登録・更新
+            Table01.sqlRegist(
+                    db,
+                    true,
+                    m_txtNumber.getText().toString(),
+                    m_txtCharacter.getText().toString()
+            );
 
             // データベースを閉じる  
             db.close();
@@ -141,6 +170,9 @@ public class SubForm03 extends Activity {
         // [検索]ボタン
         m_btnSearch.setOnClickListener(onClick_btnSearch);
 
+        // [登録]ボタン
+        m_btnRegist.setOnClickListener(onClick_btnRegist);
+
         //**** 初期処理 ****//
     }
 
@@ -152,7 +184,6 @@ public class SubForm03 extends Activity {
         switch (keyCode) {
             // 戻るボタンが押下された
             case KeyEvent.KEYCODE_BACK: {
-                Toast.makeText(this, "タスクを削除して終了！", Toast.LENGTH_SHORT).show();
                 // タスクを削除して終了
                 finishAndRemoveTask();
             }

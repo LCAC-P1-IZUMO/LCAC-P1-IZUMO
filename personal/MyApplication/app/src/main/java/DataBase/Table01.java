@@ -47,8 +47,13 @@ public class Table01 {
             sql += "WHERE 1=1 ";
 
             if (!suuchi.equals("")) {
-                sql += " AND CAST(Suuchi as TEXT) = ";
-                sql += vague ? ("'%" + suuchi + "%'") : ("'" + suuchi + "'");
+                sql += " AND ";
+                if (vague) {
+                    sql += "CAST(Suuchi as TEXT) = '%" + suuchi + "%'";
+                }
+                else {
+                    sql += "Suuchi = " + suuchi;
+                }
             }
             if (!mojiretsuA.equals("")) {
                 sql += " AND MojiretsuA = ";
@@ -90,6 +95,14 @@ public class Table01 {
 
             // 登録済みかつ更新が承認された場合
             if (update) {
+                ContentValues cv = new ContentValues();
+                cv.put("MojiretsuA", mojiretsuA);
+                db.update(
+                        "Table01",
+                        cv,
+                        "Suuchi = " + suuchi,
+                        null
+                );
                 return true;
             }
 

@@ -28,7 +28,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="35dp"
         android:layout_below="@+id/textView2"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2" />
 
     <Button
         android:id="@+id/btnSubForm02"
@@ -37,7 +38,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnSubForm01"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignStart="@+id/btnSubForm01"
+        android:layout_alignEnd="@+id/btnSubForm01" />
 
     <Button
         android:id="@+id/btnSubForm03"
@@ -46,6 +48,16 @@
         android:text="SubForm03へ遷移"
         android:textAllCaps="false"
         android:layout_below="@+id/btnSubForm02"
-        android:layout_alignStart="@+id/btnSubForm02" />
+        android:layout_alignStart="@+id/btnSubForm02"
+        android:layout_alignEnd="@+id/btnSubForm02" />
+
+    <Button
+        android:id="@+id/btnSubFormSendMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="メール送信画面へ遷移"
+        android:layout_below="@+id/btnSubForm03"
+        android:layout_alignStart="@+id/btnSubForm03"
+        android:layout_alignEnd="@+id/btnSubForm03" />
 
 </RelativeLayout>

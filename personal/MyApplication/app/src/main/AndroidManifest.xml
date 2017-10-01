@@ -17,6 +17,7 @@
         <activity android:name=".SubForm01" />
         <activity android:name=".SubForm02" />
         <activity android:name=".SubForm03" />
+        <activity android:name=".SubFormSendMail" />
     </application>
 
 </manifest>
